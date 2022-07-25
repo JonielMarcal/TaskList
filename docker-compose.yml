@@ -20,6 +20,15 @@ services:
         - tasklist-net
       ports:
         - 8080:8080
+
+    api:
+      build: ./api
+      restart: always
+      networks:
+        - tasklist-net
+      ports:
+        - 3000:3000
+    
 networks:
   tasklist-net:
     driver: bridge

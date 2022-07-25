@@ -1,0 +1,17 @@
+{
+  "name": "api-tasklist",
+  "version": "1.0.0",
+  "description": "Api do Tasklist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

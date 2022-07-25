@@ -1,0 +1,25 @@
+version: '3'
+services:
+    postgres:
+      container_name: Banco_Dados
+      image: postgres:14.4
+      environment:
+        POSTGRES_USER: "master"
+        POSTGRES_PASSWORD: "master"
+        POSTGRES_DB: "tasklist"
+      networks:
+        - tasklist-net
+      ports:
+        - 5432:5432
+      restart: always
+    
+    adminer:
+      image: adminer
+      restart: always
+      networks:
+        - tasklist-net
+      ports:
+        - 8080:8080
+networks:
+  tasklist-net:
+    driver: bridge

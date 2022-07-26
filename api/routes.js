@@ -1,17 +1,14 @@
 const {Router} = require('express')
+const IndexController = require('./controllers/indexController')
+const StatusController = require('./controllers/statusController')
+const ContatosController = require('./controllers/contatosController')
 
 const router = Router()
 
-router.get('/', (req,res)=>{
-    res.send('Parabens!')
-})
+router.get('/',IndexController.enviarResposta)
 
-router.get('/status', (req,res)=>{
-    res.send({'status':'OK'})
-})
+router.get('/status',StatusController.enviarStatus)
 
-router.get('/contatos', (req,res)=>{
-    res.send({'contatos':'OK'})
-})
+router.get('/contatos',ContatosController.enviarContatos)
 
 module.exports = router;    

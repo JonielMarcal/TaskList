@@ -1,5 +1,6 @@
 class CreateController{
-    enviarCreate(req,res){
+    index(req,res){
+        console.log("teste: ",req.body)
         res.send({'Create':'OK'})
     }
 }

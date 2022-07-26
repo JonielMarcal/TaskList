@@ -1,8 +1,8 @@
 FROM node:16.16-alpine3.15
 
-WORKDIR /app
+WORKDIR /pastaapi
 
-COPY . ./app/
+COPY . ./pastaapi/
 
 RUN yarn install
 

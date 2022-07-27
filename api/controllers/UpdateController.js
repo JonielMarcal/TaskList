@@ -1,5 +1,5 @@
 class UpdateController{
-    enviarUpdate(req,res){
+    update(req,res){
         res.send({'Update':'OK'})
     }
 }

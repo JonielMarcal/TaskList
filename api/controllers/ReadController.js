@@ -1,6 +1,6 @@
 class ReadController{
-    enviarRead(req,res){
-        res.send({'Read':'OK'})
+   read(req,res){
+        res.send({'Ler':'OK'})
     }
 }
 module.exports = new ReadController()

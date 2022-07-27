@@ -1,5 +1,5 @@
 class IndexController{
-    enviarResposta(req,res){
+    index(req,res){
         res.send('Parabens!')
     }
 }

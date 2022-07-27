@@ -1,5 +1,5 @@
 class DeleteController{
-    enviarDelete(req,res){
+  delete(req,res){
         res.send({'Delete':'OK'})
     }
 }

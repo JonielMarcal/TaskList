@@ -1,20 +1,17 @@
 const {Router} = require('express')
 const IndexController = require('./controllers/indexController')
-const CreateController = require('./controllers/CreateController')
-const ReadController = require('./controllers/ReadController')
-const DeleteController = require('./controllers/DeleteController')
-const UpdateController = require('./controllers/UpdateController')
+const TaskController = require('./controllers/taskController')
 
 const router = Router()
 
 router.get('/',IndexController.index)
 
-router.post('/create',CreateController.create)
+router.post('/create',TaskController.create)
 
-router.get('/delete',DeleteController.delete)
+router.get('/delete',TaskController.delete)
 
-router.get('/read',ReadController.read)
+router.get('/read',TaskController.read)
 
-router.get('/update',UpdateController.update)
+router.get('/update',TaskController.update)
 
 module.exports = router;    

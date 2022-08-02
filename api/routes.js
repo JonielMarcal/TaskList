@@ -14,4 +14,10 @@ router.get('/read',TaskController.read)
 
 router.get('/update',TaskController.update)
 
+router.get('/show/:id',TaskController.show)
+
+router.get('/local',TaskController.local)
+
+router.get('/prioridade',TaskController.prioridade)
+
 module.exports = router;    

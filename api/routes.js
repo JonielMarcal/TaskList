@@ -8,7 +8,7 @@ router.get('/',IndexController.index)
 
 router.post('/create',TaskController.create)
 
-router.get('/delete',TaskController.delete)
+router.delete('/delete/:id',TaskController.delete)
 
 router.get('/read',TaskController.read)
 

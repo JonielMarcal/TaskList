@@ -18,8 +18,19 @@ class TaskController{
         res.send({'Update':'OK'})
     }
 
-    delete(req,res){
-        res.send({'Delete':'OK'})
+    async delete(req,res){
+        const {id} = req.params;
+
+        const tasklist = await taskRepositorys.findById(id);
+
+        if(!tasklist) {
+
+            return res.statu.json({ error: 'Tarefa  nao encontrado'})
+        }
+
+        await taskRepositorys.delete(id);
+        res.sendStatus(204);
+        
     }
     async show(req,res){
         const {id} = req.params;

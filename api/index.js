@@ -2,7 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser')
 var app = express()
 
-const routes = require('./routes')
+
+const routes = require('./routes');
+const { response } = require('express');
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))

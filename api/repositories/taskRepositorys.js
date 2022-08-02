@@ -26,5 +26,4 @@ class TaskListRepository {
     }
 };
 
-
 module.exports = new TaskListRepository();

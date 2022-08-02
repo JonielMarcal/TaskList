@@ -1,0 +1,10 @@
+app.use((req, res, next) =>{
+    req.appId = 'MeuAppId'; 
+    response.send('Interceptado pelo Middlaware');
+    next();
+})
+
+        //função middlaware para uso quando precisar! 
+        //podem ser executados dentro de cada função 
+        //especifica quando middlawares forem necessarios.
+        //ou antes mesmo de cada função.

@@ -14,6 +14,7 @@ services:
       restart: always
     
     adminer:
+      container_name: SGBD
       image: adminer
       restart: always
       networks:
@@ -22,6 +23,7 @@ services:
         - 8080:8080
 
     api:
+      container_name: API
       build: ./api
       restart: always
       networks:

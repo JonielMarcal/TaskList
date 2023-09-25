@@ -62,4 +62,29 @@ body{
     padding: 12px;
     margin-left: 12px;
     cursor: pointer;
+   
+}
+.listaCompleta{
+    margin-top: 10px;
+    width: 100%;
+    list-style: none;
+    
+}
+.lista{
+    display: flex;
+    background-color:#F2F2F2;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.2);
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+   
+}
+.lista:hover {
+        border-radius: 15PX;
+        transform: scale(1.1);
+        background-color: #a6dffc;
+        cursor: pointer;
 }

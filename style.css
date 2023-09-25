@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient( 109deg, transparent, #2d8427 23.57%, #205a06 41%, #000 45%,
+	transparent 45%, transparent 100% ),
+	linear-gradient( 109deg, transparent, #e79a07 45%, #e79a07 50%, #e79a07 52%, 
+    #444 55%, transparent 45%, transparent 100% ),
+    linear-gradient( 109deg, transparent, #288ab1 55%, #288ab1 68%,  #000 73%, 
+    transparent 73%, transparent 100% ),
+	linear-gradient( 109deg, transparent, #de491e 73%, #de491e 100% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    border: 3px solid black;
+    padding: 40px 25px;
+    width: 45%;
+}
+.container2{
+    background-color: fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px;
+    display: flex;
+}
+.container3{
+    background-color: fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px;
+
+}
+.textInput{
+    flex: 1;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+.btnInclud{
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+}

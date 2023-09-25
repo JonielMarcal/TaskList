@@ -22,6 +22,7 @@ body{
     border: 3px solid black;
     padding: 40px 25px;
     width: 45%;
+    min-width: 500px;
 }
 .container2{
     background-color: fff;
@@ -45,9 +46,20 @@ body{
     padding: 12px;
     font-weight: 500;
 }
+.textInput input:focus{
+    outline: none;
+    border-color: #d7f1ca;
+}
 .btnInclud{
     flex: 1;
     border-radius: 5px;
     font-weight: 500;
     height: 100%;
+    font-size: 3rem;
+    border: none;
+    background-color: #41b883;
+    color: black;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
 }

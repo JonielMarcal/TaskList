@@ -57,7 +57,7 @@ body{
     height: 100%;
     font-size: 3rem;
     border: none;
-    background-color: #41b883;
+    background-color: #03da27;
     color: black;
     padding: 12px;
     margin-left: 12px;
@@ -91,6 +91,8 @@ body{
     cursor: pointer;
     font-size: 35px;
 }
+
+
 .buttonConcluir{
     border-radius: 5px;
     cursor: pointer;

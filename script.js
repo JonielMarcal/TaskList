@@ -5,12 +5,16 @@ const ULs = document.querySelector(".listaCompleta");
 let tarefas = [];
 
 const addTarefa = () => {
-  tarefas.push({
-    tarefa: input.value,
-    concluida: false,
-  });
-  input.value = "";
-  mostrarTarefa();
+  if (input.value === " ") {
+    alert("Favor, informe uma tarefa!");
+  } else {
+    tarefas.push({
+      nome: input.value,
+      concluida: false,
+    });
+    input.value = "";
+    mostrarTarefa();
+  }
 };
 
 const mostrarTarefa = () => {
@@ -20,11 +24,12 @@ const mostrarTarefa = () => {
     novaLista =
       novaLista +
       `
-        <li class="lista">
-            <button onclick="concluirTarefa(${index})">Concluir</button>
-            <p>${item}</p>
-            <button onclick="excluirTarefa(${index})">Excluir</button>
+        <li class="lista ${item.concluida ? "none" : "lista"}">
+            <button class="buttonConcluir" onclick="concluirTarefa(${index})">Concluir</button>
+            <p>${item.nome}</p>
+            <button class="buttonExcluir" onclick="excluirTarefa(${index})">Excluir</button>
         </li>
+        
         `;
   });
   ULs.innerHTML = novaLista;
@@ -36,5 +41,6 @@ const excluirTarefa = (index) => {
 };
 
 const concluirTarefa = (index) => {
-  console.log("Posicao", index);
+  tarefas[index].concluida = !tarefas[index].concluida;
+  mostrarTarefa();
 };

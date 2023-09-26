@@ -80,11 +80,31 @@ body{
     padding: 0 15px;
     border-radius: 5px;
     margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 30px ;
    
 }
-.lista:hover {
-        border-radius: 15PX;
-        transform: scale(1.1);
-        background-color: #a6dffc;
-        cursor: pointer;
+.none{
+    background-color: greenyellow;
+    border-radius: 15PX;
+    transform: scale(1.1);
+    cursor: pointer;
+    font-size: 35px;
+}
+.buttonConcluir{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #48d407;
+    font-size: 25px;
+    
+}
+.buttonExcluir{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #db1e05;
+    font-size: 25px;
+    
+}
+.tarefa{
+    font-size: 25px;
 }

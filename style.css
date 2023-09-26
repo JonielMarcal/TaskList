@@ -91,7 +91,10 @@ body{
     cursor: pointer;
     font-size: 35px;
 }
-
+.none span{
+    text-decoration: line-through;
+    
+}
 
 .buttonConcluir{
     border-radius: 5px;

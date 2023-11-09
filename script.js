@@ -12,14 +12,16 @@ const addTarefa = () => {
       nome: input.value,
       concluida: false,
     });
-    input.value = "";
-    mostrarTarefa();
   }
+  input.value = "";
+  mostrarTarefa();
+  
 };
+
+
 
 const mostrarTarefa = () => {
   novaLista = "";
-
   tarefas.map((item, index) => {
     novaLista =
       novaLista +
@@ -52,3 +54,9 @@ const salvarLocalStorafe = () => {
   mostrarTarefa();
 };
 salvarLocalStorafe();
+
+input.addEventListener("keypress", function(e){
+  if(e.key === "Enter"){
+    addTarefa()
+  }
+})

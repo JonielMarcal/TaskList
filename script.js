@@ -48,12 +48,13 @@ const concluirTarefa = (index) => {
   mostrarTarefa();
 };
 
-const salvarLocalStorafe = () => {
+const dadosLocalStorafe = () => {
   const tarefasLocalStorage = localStorage.getItem("lista");
   tarefas = JSON.parse(tarefasLocalStorage);
   mostrarTarefa();
+  console.log(typeof tarefas)
 };
-salvarLocalStorafe();
+dadosLocalStorafe();
 
 input.addEventListener("keypress", function(e){
   if(e.key === "Enter"){
